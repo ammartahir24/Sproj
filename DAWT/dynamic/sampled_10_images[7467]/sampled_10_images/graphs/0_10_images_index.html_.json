@@ -1,0 +1,407 @@
+[
+    {
+        "load": 1107.82,
+        "cpu_time": 1120908
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10_images_index.html",
+        "objs": [
+            {
+                "activityId": "Networking_0",
+                "id": "EC5CA32E07E2D08ADF1B3A6C5CCBA152",
+                "startTime": 0.0,
+                "endTime": 9.531,
+                "mimeType": "text/html",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10_images_index.html",
+                "fromScript": "Null",
+                "transferSize": 637,
+                "responseReceivedTime": 0.064,
+                "statusCode": 200
+            },
+            {
+                "activityId": "Loading_0",
+                "fromScript": null,
+                "styleSheetUrl": null,
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10_images_index.html",
+                "name": "ParseHTML",
+                "startTime": 10.188,
+                "endTime": 41.771
+            },
+            {
+                "activityId": "Loading_1",
+                "fromScript": null,
+                "styleSheetUrl": null,
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10_images_index.html",
+                "name": "ParseHTML",
+                "startTime": 62.001,
+                "endTime": 66.002
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/12232.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_1",
+                "id": "1000019454.108",
+                "startTime": 10.555,
+                "endTime": 1105.812,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/12232.jpg",
+                "fromScript": "Null",
+                "transferSize": 64523,
+                "responseReceivedTime": 50.11,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11829.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_2",
+                "id": "1000019454.109",
+                "startTime": 11.764,
+                "endTime": 1102.395,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11829.jpg",
+                "fromScript": "Null",
+                "transferSize": 4365,
+                "responseReceivedTime": 68.422,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11510.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_3",
+                "id": "1000019454.110",
+                "startTime": 12.517,
+                "endTime": 1052.889,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11510.jpg",
+                "fromScript": "Null",
+                "transferSize": 10199,
+                "responseReceivedTime": 450.987,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11384.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_4",
+                "id": "1000019454.111",
+                "startTime": 15.903,
+                "endTime": 1061.677,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11384.jpg",
+                "fromScript": "Null",
+                "transferSize": 33585,
+                "responseReceivedTime": 454.463,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11237.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_5",
+                "id": "1000019454.112",
+                "startTime": 16.691,
+                "endTime": 1066.016,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11237.jpg",
+                "fromScript": "Null",
+                "transferSize": 42098,
+                "responseReceivedTime": 458.042,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11109.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_6",
+                "id": "1000019454.113",
+                "startTime": 17.03,
+                "endTime": 1072.044,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11109.jpg",
+                "fromScript": "Null",
+                "transferSize": 44124,
+                "responseReceivedTime": 468.101,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11006.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_7",
+                "id": "1000019454.114",
+                "startTime": 21.258,
+                "endTime": 1069.101,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11006.jpg",
+                "fromScript": "Null",
+                "transferSize": 59508,
+                "responseReceivedTime": 952.901,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10961.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_8",
+                "id": "1000019454.115",
+                "startTime": 22.305,
+                "endTime": 1090.518,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10961.jpg",
+                "fromScript": "Null",
+                "transferSize": 11059,
+                "responseReceivedTime": 961.934,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10856.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_9",
+                "id": "1000019454.116",
+                "startTime": 23.057,
+                "endTime": 1045.698,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10856.jpg",
+                "fromScript": "Null",
+                "transferSize": 35738,
+                "responseReceivedTime": 971.838,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10819.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_10",
+                "id": "1000019454.117",
+                "startTime": 24.555,
+                "endTime": 1095.178,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/10819.jpg",
+                "fromScript": "Null",
+                "transferSize": 47621,
+                "responseReceivedTime": 978.087,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "Rendering",
+        "objs": [
+            {
+                "activityId": "Rendering_1",
+                "startTime": 56.765,
+                "name": "Layout",
+                "endTime": 58.048
+            },
+            {
+                "activityId": "Rendering_2",
+                "startTime": 58.171,
+                "name": "UpdateLayerTree",
+                "endTime": 58.676
+            },
+            {
+                "activityId": "Rendering_3",
+                "startTime": 77.171,
+                "name": "Layout",
+                "endTime": 78.212
+            },
+            {
+                "activityId": "Rendering_4",
+                "startTime": 78.776,
+                "name": "UpdateLayerTree",
+                "endTime": 79.198
+            },
+            {
+                "activityId": "Rendering_5",
+                "startTime": 473.99,
+                "name": "Layout",
+                "endTime": 475.274
+            },
+            {
+                "activityId": "Rendering_6",
+                "startTime": 475.38,
+                "name": "UpdateLayerTree",
+                "endTime": 476.022
+            },
+            {
+                "activityId": "Rendering_7",
+                "startTime": 996.874,
+                "name": "Layout",
+                "endTime": 997.788
+            },
+            {
+                "activityId": "Rendering_8",
+                "startTime": 998.117,
+                "name": "UpdateLayerTree",
+                "endTime": 998.829
+            }
+        ]
+    },
+    {
+        "id": "Painting",
+        "objs": [
+            {
+                "activityId": "Painting_1",
+                "startTime": 32.822,
+                "name": "CompositeLayers",
+                "endTime": 33.003,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_2",
+                "startTime": 58.735,
+                "name": "Paint",
+                "endTime": 59.111
+            },
+            {
+                "activityId": "Painting_3",
+                "startTime": 59.532,
+                "name": "CompositeLayers",
+                "endTime": 60.748,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_4",
+                "startTime": 79.262,
+                "name": "Paint",
+                "endTime": 79.482
+            },
+            {
+                "activityId": "Painting_5",
+                "startTime": 82.916,
+                "name": "CompositeLayers",
+                "endTime": 449.252,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_6",
+                "startTime": 476.099,
+                "name": "Paint",
+                "endTime": 476.264
+            },
+            {
+                "activityId": "Painting_7",
+                "startTime": 476.707,
+                "name": "CompositeLayers",
+                "endTime": 945.804,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_8",
+                "startTime": 998.878,
+                "name": "Paint",
+                "endTime": 998.9680000000001
+            },
+            {
+                "activityId": "Painting_9",
+                "startTime": 999.222,
+                "name": "CompositeLayers",
+                "endTime": 999.63,
+                "layerTreeId": 1
+            }
+        ]
+    },
+    {
+        "id": "Deps",
+        "objs": [
+            {
+                "time": -1,
+                "a1": "Networking_0",
+                "a2": "Loading_0"
+            },
+            {
+                "time": 10.555,
+                "a1": "Loading_0",
+                "a2": "Networking_1"
+            },
+            {
+                "time": 11.764,
+                "a1": "Loading_0",
+                "a2": "Networking_2"
+            },
+            {
+                "time": 12.517,
+                "a1": "Loading_0",
+                "a2": "Networking_3"
+            },
+            {
+                "time": 15.903,
+                "a1": "Loading_0",
+                "a2": "Networking_4"
+            },
+            {
+                "time": 16.691,
+                "a1": "Loading_0",
+                "a2": "Networking_5"
+            },
+            {
+                "time": 17.03,
+                "a1": "Loading_0",
+                "a2": "Networking_6"
+            },
+            {
+                "time": 21.258,
+                "a1": "Loading_0",
+                "a2": "Networking_7"
+            },
+            {
+                "time": 22.305,
+                "a1": "Loading_0",
+                "a2": "Networking_8"
+            },
+            {
+                "time": 23.057,
+                "a1": "Loading_0",
+                "a2": "Networking_9"
+            },
+            {
+                "time": 24.555,
+                "a1": "Loading_0",
+                "a2": "Networking_10"
+            },
+            {
+                "time": -1,
+                "a1": "Networking_0",
+                "a2": "Loading_1"
+            },
+            {
+                "time": -1,
+                "a1": "Loading_0",
+                "a2": "Loading_1"
+            }
+        ]
+    },
+    {
+        "criticalPath": [
+            "Networking_0",
+            "Loading_0",
+            "Networking_1"
+        ],
+        "networkingTime": 1095.26,
+        "computationTime": 9.9
+    }
+]

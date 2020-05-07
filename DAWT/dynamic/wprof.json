@@ -1,0 +1,173 @@
+[
+    {
+        "objs": [
+            {
+                "responseReceivedTime": 30.085,
+                "mimeType": "text/html",
+                "startTime": 0.0,
+                "fromScript": "Null",
+                "activityId": "Networking_0",
+                "endTime": 41.497,
+                "transferSize": 5216,
+                "url": "http://abdulmanan.freeiz.com/",
+                "id": "10856.8",
+                "statusCode": 200
+            },
+            {
+                "activityId": "Scripting_0",
+                "url": "http://abdulmanan.freeiz.com/",
+                "endTime": 45.667,
+                "startTime": 44.917
+            },
+            {
+                "endTime": 46.795,
+                "url": "http://abdulmanan.freeiz.com/",
+                "startTime": 43.3,
+                "fromScript": null,
+                "styleSheetUrl": null,
+                "activityId": "Loading_0",
+                "name": "ParseHTML"
+            }
+        ],
+        "id": "http://abdulmanan.freeiz.com/"
+    },
+    {
+        "objs": [
+            {
+                "responseReceivedTime": 43.602,
+                "mimeType": "image/jpeg",
+                "startTime": 43.526,
+                "fromScript": "Null",
+                "activityId": "Networking_1",
+                "endTime": 43.681,
+                "transferSize": 101019,
+                "url": "http://abdulmanan.freeiz.com/img1.jpg",
+                "id": "10856.13",
+                "statusCode": 200
+            }
+        ],
+        "id": "http://abdulmanan.freeiz.com/img1.jpg"
+    },
+    {
+        "objs": [
+            {
+                "responseReceivedTime": 43.933,
+                "mimeType": "image/webp",
+                "startTime": 43.867,
+                "fromScript": "Null",
+                "activityId": "Networking_2",
+                "endTime": 44.041,
+                "transferSize": 1696,
+                "url": "https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png",
+                "id": "10856.14",
+                "statusCode": 200
+            }
+        ],
+        "id": "https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"
+    },
+    {
+        "objs": [
+            {
+                "activityId": "Rendering_0",
+                "name": "UpdateLayerTree",
+                "endTime": 0.6779999999999999,
+                "startTime": 0.605
+            },
+            {
+                "activityId": "Rendering_1",
+                "name": "Layout",
+                "endTime": 27.656,
+                "startTime": 21.112
+            },
+            {
+                "activityId": "Rendering_2",
+                "name": "UpdateLayerTree",
+                "endTime": 28.201,
+                "startTime": 27.688
+            },
+            {
+                "activityId": "Rendering_3",
+                "name": "Layout",
+                "endTime": 49.21,
+                "startTime": 48.244
+            },
+            {
+                "activityId": "Rendering_4",
+                "name": "UpdateLayerTree",
+                "endTime": 52.072,
+                "startTime": 51.689
+            }
+        ],
+        "id": "Rendering"
+    },
+    {
+        "objs": [
+            {
+                "activityId": "Painting_0",
+                "name": "Paint",
+                "endTime": 28.479,
+                "startTime": 28.264
+            },
+            {
+                "endTime": 29.707,
+                "activityId": "Painting_1",
+                "name": "CompositeLayers",
+                "layerTreeId": 1,
+                "startTime": 29.419
+            },
+            {
+                "activityId": "Painting_2",
+                "name": "Paint",
+                "endTime": 52.376000000000005,
+                "startTime": 52.118
+            },
+            {
+                "endTime": 52.94,
+                "activityId": "Painting_3",
+                "name": "CompositeLayers",
+                "layerTreeId": 1,
+                "startTime": 52.572
+            }
+        ],
+        "id": "Painting"
+    },
+    {
+        "objs": [
+            {
+                "time": -1,
+                "a1": "Networking_0",
+                "a2": "Loading_0"
+            },
+            {
+                "time": 43.526,
+                "a1": "Loading_0",
+                "a2": "Networking_1"
+            },
+            {
+                "time": 43.867,
+                "a1": "Loading_0",
+                "a2": "Networking_2"
+            },
+            {
+                "time": 44.917,
+                "a1": "Loading_0",
+                "a2": "Scripting_0"
+            }
+        ],
+        "id": "Deps"
+    },
+    {},
+    {
+        "networkingTime": 0,
+        "computationTime": 44.99,
+        "firstMeaningfulPaint": -1000,
+        "firstPaint": -1000,
+        "criticalPath": [
+            "Networking_0",
+            "Loading_0"
+        ],
+        "loadEventEnd": 48.117,
+        "domContentLoadedEventEnd": 45.829,
+        "firstContentfulPaint": -1000
+    }
+]

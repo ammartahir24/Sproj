@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html>
+      <head><title>Adaptive Streaming in HTML5</title></head>
+      <body>
+        <h1>Adaptive Streaming with HTML5</h1>
+        <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+		...
+		<style>
+		    video {
+		       width: 640px;
+		       height: 360px;
+		    }
+		</style>
+		...
+		<body>
+			<script>
+			    function init() {
+			        var video,
+			            player,
+			            url = "./manifest.mpd";
+
+			        video = document.querySelector("video");
+			        player = dashjs.MediaPlayer().create();
+			        player.initialize(video, url, true);
+			        player.on(dashjs.MediaPlayer.events["PLAYBACK_ENDED"], function() {
+			            clearInterval(eventPoller);
+			            clearInterval(bitrateCalculator);
+			        });
+
+			        var eventPoller = setInterval(function() {
+			            var streamInfo = player.getActiveStream().getStreamInfo();
+			            var dashMetrics = player.getDashMetrics();
+			            var dashAdapter = player.getDashAdapter();
+
+			            if (dashMetrics && streamInfo) {
+			                const periodIdx = streamInfo.index;
+			                var repSwitch = dashMetrics.getCurrentRepresentationSwitch('video', true);
+			                var bufferLevel = dashMetrics.getCurrentBufferLevel('video', true);
+			                var droppedFrames = dashMetrics.getCurrentDroppedFrames('video',true)
+			                var bitrate = repSwitch ? Math.round(dashAdapter.getBandwidthForRepresentation(repSwitch.to, periodIdx) / 1000) : NaN;
+			                document.getElementById('bufferLevel').innerText = bufferLevel + " secs";
+			                document.getElementById('reportedBitrate').innerText = bitrate + " Kbps";
+			            }
+			        }, 1000);
+
+			        if (video.webkitVideoDecodedByteCount !== undefined) {
+			            var lastDecodedByteCount = 0;
+			            const bitrateInterval = 5;
+			            var bitrateCalculator = setInterval(function() {
+			                var calculatedBitrate = (((video.webkitVideoDecodedByteCount - lastDecodedByteCount) / 1000) * 8) / bitrateInterval;
+			                document.getElementById('calculatedBitrate').innerText = Math.round(calculatedBitrate) + " Kbps";
+			                lastDecodedByteCount = video.webkitVideoDecodedByteCount;
+			            }, bitrateInterval * 1000);
+			        } else {
+			            document.getElementById('chrome-only').style.display = "none";
+			        }
+
+
+			    }
+			</script>
+			<script>
+			localStorage.setItem("timeElapsed", 0.0);
+            localStorage.setItem("droppedFrames", 0.0);
+            localStorage.setItem("totalFrames", 0.0);
+            localStorage.setItem("fps", 0.0);
+            setInterval(function(){ 
+                var videoElem = document.querySelector("video");
+                var quality = videoElem.getVideoPlaybackQuality();
+                var droppedFrames = quality.droppedVideoFrames;
+                var totalFrames   = quality.totalVideoFrames;
+                var timeElapsed   = quality.creationTime/1000.0;
+                var lastDroppedFrames = localStorage.droppedFrames;
+                var lastTimeElapsed = localStorage.timeElapsed;
+                var lastTotalFrames = localStorage.totalFrames;
+
+                let fps = ((totalFrames - lastTotalFrames) - (droppedFrames - lastDroppedFrames))/(timeElapsed - lastTimeElapsed);
+                localStorage.setItem("timeElapsed", timeElapsed);
+                localStorage.setItem("droppedFrames", droppedFrames);
+                localStorage.setItem("totalFrames", totalFrames);
+                localStorage.setItem("fps", fps);
+                //code goes here that will be run every 4 seconds.
+                 document.getElementById('droppedFrames').innerText = fps;    
+            }, 1000);
+
+			</script>
+		   <div>
+		       <video controls="true"></video>
+		   </div>
+		   <script>
+			    document.addEventListener("DOMContentLoaded", function () {
+			        init();
+			    });
+			</script>
+			<script>
+				setInterval(function(){
+					var k = new XMLHttpRequest();
+                    k.open("POST", "http://192.168.15.3:8333", !1),
+                        (k.onreadystatechange = function() {
+                            4 == k.readyState &&
+                                200 == k.status &&
+                                (console.log("GOT RESPONSE:" + k.responseText + "---"),
+                                    "REFRESH" == k.responseText &&
+                                    document.location.reload(!0));
+                        });
+                    var m = {
+                        frameRate: localStorage.fps,
+                        timeFrame: localStorage.timeElapsed,
+                        droppedFrames: localStorage.droppedFrames,
+                        totalFrames: localStorage.totalFrames
+                    };
+                    k.send(JSON.stringify(m));
+					console.log(m)
+				}, 2000)
+			</script>
+			<div>
+				<strong>Reported bitrate:</strong>
+				<span id="reportedBitrate">1884 Kbps</span>
+				<br>
+				<strong>Buffer level:</strong>
+				<span id="bufferLevel">1884 Kbps</span>
+				<br>
+				<strong>Calculated bitrate:</strong>
+				<span id="calculatedBitrate">1884 Kbps</span>
+				<br>
+				<strong>FPS:</strong>
+				<span id="droppedFrames">0</span>
+				<br>
+			</div>
+		</body>
+      </body>
+    </html>

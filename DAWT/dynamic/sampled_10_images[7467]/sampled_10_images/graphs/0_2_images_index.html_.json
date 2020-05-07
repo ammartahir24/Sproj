@@ -1,0 +1,258 @@
+[
+    {
+        "load": 682.61,
+        "cpu_time": 859958
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/2_images_index.html",
+        "objs": [
+            {
+                "activityId": "Networking_0",
+                "id": "58E2AD3C2C38BF75CF63058E587FF225",
+                "startTime": 0.0,
+                "endTime": 63.145,
+                "mimeType": "text/html",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/2_images_index.html",
+                "fromScript": "Null",
+                "transferSize": 133,
+                "responseReceivedTime": 0.062,
+                "statusCode": 200
+            },
+            {
+                "activityId": "Loading_0",
+                "fromScript": null,
+                "styleSheetUrl": null,
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/2_images_index.html",
+                "name": "ParseHTML",
+                "startTime": 64.216,
+                "endTime": 70.95
+            },
+            {
+                "activityId": "Loading_1",
+                "fromScript": null,
+                "styleSheetUrl": null,
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/2_images_index.html",
+                "name": "ParseHTML",
+                "startTime": 93.705,
+                "endTime": 94.503
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/12232.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_1",
+                "id": "1000019454.68",
+                "startTime": 64.589,
+                "endTime": 679.981,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/12232.jpg",
+                "fromScript": "Null",
+                "transferSize": 27659,
+                "responseReceivedTime": 101.813,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11829.jpg",
+        "objs": [
+            {
+                "activityId": "Networking_2",
+                "id": "1000019454.69",
+                "startTime": 67.545,
+                "endTime": 377.137,
+                "mimeType": "image/jpeg",
+                "url": "http://10.103.72.77/transcoding_server/sample/sampled_10_images/11829.jpg",
+                "fromScript": "Null",
+                "transferSize": 4365,
+                "responseReceivedTime": 117.249,
+                "statusCode": 200
+            }
+        ]
+    },
+    {
+        "id": "Rendering",
+        "objs": [
+            {
+                "activityId": "Rendering_0",
+                "startTime": 74.584,
+                "name": "Layout",
+                "endTime": 77.14
+            },
+            {
+                "activityId": "Rendering_1",
+                "startTime": 77.26,
+                "name": "UpdateLayerTree",
+                "endTime": 77.629
+            },
+            {
+                "activityId": "Rendering_2",
+                "startTime": 95.172,
+                "name": "UpdateLayerTree",
+                "endTime": 95.217
+            },
+            {
+                "activityId": "Rendering_3",
+                "startTime": 102.834,
+                "name": "UpdateLayerTree",
+                "endTime": 102.875
+            },
+            {
+                "activityId": "Rendering_4",
+                "startTime": 122.045,
+                "name": "Layout",
+                "endTime": 123.373
+            },
+            {
+                "activityId": "Rendering_5",
+                "startTime": 123.44,
+                "name": "UpdateLayerTree",
+                "endTime": 123.681
+            },
+            {
+                "activityId": "Rendering_6",
+                "startTime": 368.555,
+                "name": "UpdateLayerTree",
+                "endTime": 368.618
+            },
+            {
+                "activityId": "Rendering_7",
+                "startTime": 379.29,
+                "name": "UpdateLayerTree",
+                "endTime": 379.42
+            },
+            {
+                "activityId": "Rendering_8",
+                "startTime": 688.0,
+                "name": "UpdateLayerTree",
+                "endTime": 688.194
+            }
+        ]
+    },
+    {
+        "id": "Painting",
+        "objs": [
+            {
+                "activityId": "Painting_0",
+                "startTime": 77.68,
+                "name": "Paint",
+                "endTime": 77.78200000000001
+            },
+            {
+                "activityId": "Painting_1",
+                "startTime": 78.146,
+                "name": "CompositeLayers",
+                "endTime": 93.429,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_2",
+                "startTime": 96.639,
+                "name": "CompositeLayers",
+                "endTime": 96.935,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_3",
+                "startTime": 100.04,
+                "name": "CompositeLayers",
+                "endTime": 100.12,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_4",
+                "startTime": 102.926,
+                "name": "CompositeLayers",
+                "endTime": 102.996,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_5",
+                "startTime": 123.733,
+                "name": "Paint",
+                "endTime": 124.406
+            },
+            {
+                "activityId": "Painting_6",
+                "startTime": 124.79,
+                "name": "CompositeLayers",
+                "endTime": 125.051,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_7",
+                "startTime": 368.704,
+                "name": "CompositeLayers",
+                "endTime": 368.784,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_8",
+                "startTime": 379.47,
+                "name": "Paint",
+                "endTime": 379.644
+            },
+            {
+                "activityId": "Painting_9",
+                "startTime": 379.86,
+                "name": "CompositeLayers",
+                "endTime": 654.244,
+                "layerTreeId": 1
+            },
+            {
+                "activityId": "Painting_10",
+                "startTime": 688.274,
+                "name": "Paint",
+                "endTime": 688.533
+            },
+            {
+                "activityId": "Painting_11",
+                "startTime": 692.75,
+                "name": "CompositeLayers",
+                "endTime": 838.308,
+                "layerTreeId": 1
+            }
+        ]
+    },
+    {
+        "id": "Deps",
+        "objs": [
+            {
+                "time": -1,
+                "a1": "Networking_0",
+                "a2": "Loading_0"
+            },
+            {
+                "time": 64.589,
+                "a1": "Loading_0",
+                "a2": "Networking_1"
+            },
+            {
+                "time": 67.545,
+                "a1": "Loading_0",
+                "a2": "Networking_2"
+            },
+            {
+                "time": -1,
+                "a1": "Networking_0",
+                "a2": "Loading_1"
+            },
+            {
+                "time": -1,
+                "a1": "Loading_0",
+                "a2": "Loading_1"
+            }
+        ]
+    },
+    {
+        "criticalPath": [
+            "Networking_0",
+            "Loading_0",
+            "Networking_1"
+        ],
+        "networkingTime": 615.39,
+        "computationTime": 63.52
+    }
+]

@@ -1,0 +1,14 @@
+Optimize(node, mappings, budget):
+	if node has no children:
+		if budget < 0:
+			return -1
+		return transformation with max SSIM value
+
+	if node has children:
+		if budget < node.Smallest_completion_time:
+			return -1
+		for each state in transformations(node):
+			for each child in node.children:
+				child_results <- Optimize(child, mappings, budget - (child.start - node.start))
+			state_results <- Combine(child_results)
+		return max(state_results)
